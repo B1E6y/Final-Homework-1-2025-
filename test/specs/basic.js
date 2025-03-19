@@ -1,5 +1,3 @@
-const assert = require('assert')
-
 const signUpPage = require('../page/signUp.page.js')
 
 
