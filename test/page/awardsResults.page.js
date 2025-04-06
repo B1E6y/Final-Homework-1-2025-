@@ -7,13 +7,13 @@ class awardsResultsPage {
         console.log("Does Stats button clickable? : " + await this.stats.isClickable());  
         }
 
-        async statsClick () {
-        await this.stats.click();  
-        }
+        // async statsClick () {
+        // await this.stats.click();  
+        // }
 
-        async getStats () {
-            console.log(await this.statsMenu.getText());  
-           }
+        // async getStats () {
+        //     console.log(await this.statsMenu.getText());  
+        //    }
       
     }
 
