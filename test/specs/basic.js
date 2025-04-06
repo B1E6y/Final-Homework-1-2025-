@@ -49,8 +49,8 @@ describe('Should check inputs for credentials (Final homework1)', async () => {
         await awardsResultsPage.statsBtn()
         await browser.pause(100)
     
-        await awardsResultsPage.statsClick()
-        await browser.pause(100)
+        // await awardsResultsPage.statsClick()
+        // await browser.pause(100)
 
         // await awardsResultsPage.getStats()
         // await browser.pause(100)
