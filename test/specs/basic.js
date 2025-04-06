@@ -1,4 +1,7 @@
 const signUpPage = require('../page/signUp.page.js')
+const nameDatePage = require('../page/nameDate.page.js')
+const awardsResultsPage = require('../page/awardsResults.page.js')
+
 
 
 describe('Should check inputs for credentials (Final homework1)', async () => {
@@ -33,5 +36,24 @@ describe('Should check inputs for credentials (Final homework1)', async () => {
         await browser.pause(100)
 
         })
+
+    it('Get username and registration data', async () => {
+        await nameDatePage.getName()
+        await browser.pause(100)
+
+        await nameDatePage.getDate()
+        await browser.pause(100)
+        })
+
+    it('Check awards and results in UA localization', async () => {
+        await awardsResultsPage.statsBtn()
+        await browser.pause(100)
+    
+        await awardsResultsPage.statsClick()
+        await browser.pause(100)
+
+        // await awardsResultsPage.getStats()
+        // await browser.pause(100)
+        })    
     }
 )
